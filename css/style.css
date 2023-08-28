@@ -37,6 +37,15 @@ h5{font-size:18px;color:#595757;text-transform:uppercase;}
 .container{ padding:0 !important;}
 
 
+body {
+	background-image: url("images/bgIMG.png");
+	background-size: 100% 100%;
+	background-position: center center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-color: #f2f2f2;
+}
+
 
 
 
@@ -109,11 +118,11 @@ box-shadow:0 0 5px 1px rgba(0,0,0,.2);
 /*--解决方案--*/
 .welcome-gridsinfo { text-align: center; padding-bottom:50px;}
 .welcome-grid{ width:25%; padding:0 5px; margin:50px 0 50px; float:left; position:relative; cursor:pointer; }
-.welcome-grid b{width:103px;height:103px;background:url(../images/icon-1.png) repeat-x;position:absolute; left:50%;top:-40px;margin-left:-51px; z-index:2;}
-.welcome-grid b.b1{background-position:0 0;}
-.welcome-grid b.b2{background-position:309px 0px;}
-.welcome-grid b.b3{background-position:206px 0px;}
-.welcome-grid b.b4{background-position:103px 0px;}
+.welcome-grid b{width:80px;height:80px;background:url(../images/icon1.png) ;border-radius: 50%;position:absolute; left:50%;top:-40px;margin-left:-51px; z-index:2;}
+.welcome-grid b.b1{width:100px;height:100px;background:url(../images/icon1.png);}
+.welcome-grid b.b2{width:100px;height:100px;background:url(../images/icon2.png);}
+.welcome-grid b.b3{width:100px;height:100px;background:url(../images/icon3.png);}
+.welcome-grid b.b4{width:100px;height:100px;background:url(../images/icon4.png);}
 .welcome-grid p {font-size:.85em; line-height:1.8em; }
 .welcome-grid h3 {color: #797979; padding: 21px 0 6px; }
 .welcome-grid .prd_box{width:100%;   float:left;}
@@ -121,13 +130,21 @@ box-shadow:0 0 5px 1px rgba(0,0,0,.2);
 .welcome-grid .prd_2 .prd_d {background-color:#96cb11;}
 .welcome-grid .prd_3 .prd_d {background-color:#4c8da5;}
 .welcome-grid .prd_4 .prd_d {background-color:#35af7c;}
-.welcome-grid .prd_t { width: 100%; 
+.welcome-grid .prd_t1 { width: 100%;
 	min-height: 184px; 
 	padding: 57px 0 10px;
 	overflow: hidden;
 	text-align: center;
 	color: #fff; 
-	background: #797979 url(../images/bgSection.png);
+	background: url(../images/clound1.png);
+}
+.welcome-grid .prd_t2 { width: 100%;
+	min-height: 184px;
+	padding: 57px 0 10px;
+	overflow: hidden;
+	text-align: center;
+	color: #fff;
+	background: url(../images/clound2.png);
 }
 .welcome-grid .prd_t h4{ font-size:20px; font-weight:normal; line-height:30px; margin:0 0 10px 0;}
 .welcome-grid .prd_t p{ font-size:12px; line-height:24px; padding:0 20px;}
@@ -139,7 +156,15 @@ box-shadow:0 0 5px 1px rgba(0,0,0,.2);
 .fm_more a{ color:#cbcbcb; font-size:18px; line-height:40px; border:2px solid #cbcbcb; padding:10px 32px;}
 .fm_more a:hover{ color:#fff; background:#797979; border:2px solid #797979;}
 
+/*--悬停显示--*/
+.tooltip {
+	opacity: 0;
+	transition: opacity 0.9s;
+}
 
+.box:hover .tooltip {
+	opacity: 1;
+}
 
 /*--服务流程--*/
 .liucheng{ background:#e3e3e3 url(../images/bgSection.png) repeat; width:100%;}
@@ -170,7 +195,10 @@ transition: all 0.1s ;}
 -khtml-transition:all 0.3s ;
 -moz-transition: all 0.3s ;
 -o-transition: all 0.3s;
-transition: all 0.3s;}
+transition: all 0.3s;
+background: linear-gradient(to right, #000000, #ffffff);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;}
 .radius-5{
 -webkit-border-radius:5px;
 -moz-border-radius: 5px;
@@ -190,20 +218,20 @@ text-shadow:0 1px 0px rgba(0,0,0,.5);}
 .txt-red{ color:#e32530;}
 .txt-orange{ color:#ff6600;}
 
-.nr span.c-1{ width:100%; height:100%; background:url(../images/icon_01.png) center no-repeat; display:block; float:left; border-radius:50%; }
-.nr span.c-2{ width:100%; height:100%; background:url(../images/icon_02.png) center no-repeat; display:block; float:left; border-radius:50%;}
-.nr span.c-3{ width:100%; height:100%; background:url(../images/icon_03.png) center no-repeat; display:block; float:left; border-radius:50%;}
-.nr span.c-4{ width:100%; height:100%; background:url(../images/icon_04.png) center no-repeat; display:block; float:left; border-radius:50%;}
-.nr span.c-5{ width:100%; height:100%; background:url(../images/icon_05.png) center no-repeat; display:block; float:left; border-radius:50%;}
-.nr span.c-6{ width:100%; height:100%; background:url(../images/icon_06.png) center no-repeat; display:block; float:left; border-radius:50%;}
-.nr span.c-7{ width:100%; height:100%; background:url(../images/icon_07.png) center no-repeat; display:block; float:left; border-radius:50%;}
-.advantage .nr .item:hover .circle span.c-1{background:url(../images/icon_01_h.png) center no-repeat;}
-.advantage .nr .item:hover .circle span.c-2{background:url(../images/icon_02_h.png) center no-repeat;}
-.advantage .nr .item:hover .circle span.c-3{background:url(../images/icon_03_h.png) center no-repeat;}
-.advantage .nr .item:hover .circle span.c-4{background:url(../images/icon_04_h.png) center no-repeat;}
-.advantage .nr .item:hover .circle span.c-5{background:url(../images/icon_05_h.png) center no-repeat;}
-.advantage .nr .item:hover .circle span.c-6{background:url(../images/icon_06_h.png) center no-repeat;}
-.advantage .nr .item:hover .circle span.c-7{background:url(../images/icon_07_h.png) center no-repeat;}
+.nr span.c-1{ width:100%; height:100%; background:url(../images/seven1.png) center no-repeat; background-size: 100px 100px;display:block; float:left; border-radius:50%; }
+.nr span.c-2{ width:100%; height:100%; background:url(../images/seven2.png) center no-repeat; background-size: 100px 100px;display:block; float:left; border-radius:50%;}
+.nr span.c-3{ width:100%; height:100%; background:url(../images/seven3.png) center no-repeat; background-size: 100px 100px;display:block; float:left; border-radius:50%;}
+.nr span.c-4{ width:100%; height:100%; background:url(../images/seven4.png) center no-repeat; background-size: 100px 100px;display:block; float:left; border-radius:50%;}
+.nr span.c-5{ width:100%; height:100%; background:url(../images/seven5.png) center no-repeat; background-size: 100px 100px;display:block; float:left; border-radius:50%;}
+.nr span.c-6{ width:100%; height:100%; background:url(../images/seven6.png) center no-repeat; background-size: 100px 100px;display:block; float:left; border-radius:50%;}
+.nr span.c-7{ width:100%; height:100%; background:url(../images/seven7.png) center no-repeat; background-size: 100px 100px;display:block; float:left; border-radius:50%;}
+.advantage .nr .item:hover .circle span.c-1{background:url(../images/seven1.png) center no-repeat;background-size: 100px 100px;}
+.advantage .nr .item:hover .circle span.c-2{background:url(../images/seven2.png) center no-repeat;background-size: 100px 100px;}
+.advantage .nr .item:hover .circle span.c-3{background:url(../images/seven3.png) center no-repeat;background-size: 100px 100px;}
+.advantage .nr .item:hover .circle span.c-4{background:url(../images/seven4.png) center no-repeat;background-size: 100px 100px;}
+.advantage .nr .item:hover .circle span.c-5{background:url(../images/seven5.png) center no-repeat;background-size: 100px 100px;}
+.advantage .nr .item:hover .circle span.c-6{background:url(../images/seven6.png) center no-repeat;background-size: 100px 100px;}
+.advantage .nr .item:hover .circle span.c-7{background:url(../images/seven7.png) center no-repeat;background-size: 100px 100px;}
 
 
 .advantage .inner{  left:0; right:0; }
@@ -709,7 +737,7 @@ transform:scale(0.9) translateY(-8px);
 
 
 /*-- footer --*/
-.footer{padding:1em 0 0 0; background:#232426 url(../images/footerbg.jpg) top center no-repeat; color:#cccccc; }
+.footer{padding:1em 0 0 0; background:#232426 url(../images/footerbgCC3.png) top center no-repeat; color:#cccccc; }
 .footer_d{ line-height:50px; min-height:50px; background:#2a2a2a; color:#3f4041; font-size:12px; float:left; width:100%; display:block;}
 .copyright{ line-height:50px; font-size:12px; min-height:50px; text-align:center; color:#c2c2c2;}
 .footer a{ color:#666;}
@@ -827,9 +855,9 @@ transition-delay:300ms;
 
 @media(max-width:1024px){
 	/*--top--*/
-	.logo {width:20%; float:left; }
-	.logo h1 {margin:0; display:block; margin-top:10px;}
-	.logo h1 a img{ width:90%;}
+	.logo {width:0%; float:left; }
+	.logo h1 {margin:0; display:block; margin-top:5px;}
+	.logo h1 a img{ width:110%;}
 	.navbar-collapse {width:80%; float:right; margin-top:43px; padding:0;}
 	.navbar-collapse ul{ float:right;}
 	.navbar-collapse li{line-height:50px; margin-left:10px; text-align:center;}
